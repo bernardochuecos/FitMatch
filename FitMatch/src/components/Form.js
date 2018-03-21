@@ -13,6 +13,7 @@ export default class FormFF extends React.Component<{}> {
         <TextInput style={styles.inputBox} 
             underlineColorAndroid='rgba(0,0,0,0)' 
             placeholder="Password"
+            secureTextEntry = {true}
             placeholderTextColor = "#ffffff"
             />
 
