@@ -7,7 +7,7 @@ export default class Logo extends React.Component<{}> {
 			<View style={styles.container}>
 				<Image style={{width: 80, height: 80}}
           			source={require('../images/FitMatchLogo.png')}/>
-				<Text style={styles.logoText}>FitMatch</Text>
+				<Text style={styles.logoText}>Welcome. Please log in.</Text>
 			</View>
 			)
 	}
