@@ -18,7 +18,7 @@ export default class FormFF extends React.Component<{}> {
             />
 
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Login</Text>
+          <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
 			</View>
 			)
