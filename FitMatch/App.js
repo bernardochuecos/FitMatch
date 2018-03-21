@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
+//import Routes from './src/Routes';
 import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
 
