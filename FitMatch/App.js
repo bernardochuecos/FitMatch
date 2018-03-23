@@ -12,7 +12,7 @@ export default class App extends React.Component {
           backgroundColor="#64dd17"
           barStyle="light-content"
         />
-        <Login/>
+        <SignUp/>
       </View>
     );
   }
