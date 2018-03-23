@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity} from 'react-native';
 
-import Logo from '../components/Logo';
+import SignupLogo from '../components/SignupLogo';
 import SignupForm from '../components/SignupForm';
 
 import {Actions} from 'react-native-router-flux';
@@ -15,7 +15,7 @@ export default class SignUp extends React.Component<{}> {
 	render() {
 		return(
 			<View style={styles.container}>
-				<Logo/>
+				<SignupLogo/>
 				<SignupForm type = "SignUp"/>
 				<View style={styles.signupTextCont}>
 					<Text style={styles.signupText}>Already have an account?</Text>

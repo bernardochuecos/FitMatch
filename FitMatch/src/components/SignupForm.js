@@ -1,4 +1,4 @@
-React from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity} from 'react-native';
 
 export default class SignupForm extends React.Component<{}> {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     height:50,
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
     borderRadius: 25,
-    paddingHorizontal: 16,
+    paddingHorizontal: 5,
     fontSize: 16,
     color: '#ffffff',
     marginVertical: 25
