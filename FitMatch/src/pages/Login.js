@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity } from 'react-native';
 
 import Logo from '../components/Logo';
@@ -6,7 +6,7 @@ import Form from '../components/Form';
 
 import {Actions} from 'react-native-router-flux';
 
-export default class Login extends React.Component<{}> {
+export default class Login extends Component<{}> {
 	
   signup() {
       Actions.signup()
@@ -28,7 +28,7 @@ export default class Login extends React.Component<{}> {
 
 const styles = StyleSheet.create({
   container : {
-    backgroundColor: "#2ec120",
+    backgroundColor: "#A1D3F8",
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
-import Routes from './src/Routes';
 import Login from './src/pages/Login';
+import SignUp from './src/pages/SignUp';
 
 export default class App extends React.Component {
   render() {
@@ -12,7 +12,7 @@ export default class App extends React.Component {
           backgroundColor="#64dd17"
           barStyle="light-content"
         />
-          <Routes/>
+        <Login/>
       </View>
     );
   }
@@ -20,7 +20,7 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container : {
-    backgroundColor: "#2ec120",
+    backgroundColor: "#A1D3F8",
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
