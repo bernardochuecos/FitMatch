@@ -9,12 +9,16 @@ export default class FormFF extends React.Component<{}> {
             underlineColorAndroid='rgba(0,0,0,0)' 
             placeholder="Email"
             placeholderTextColor = "#ffffff"
+            selectionColor="#fff"
+            keyboardType="email-address"
+            onSubmitEditing={()=> this.password.focus()}
             />
         <TextInput style={styles.inputBox} 
             underlineColorAndroid='rgba(0,0,0,0)' 
             placeholder="Password"
             secureTextEntry = {true}
             placeholderTextColor = "#ffffff"
+            ref={(input) => this.password = input}
             />
 
         <TouchableOpacity style={styles.button}>
