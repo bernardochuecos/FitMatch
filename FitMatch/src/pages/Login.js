@@ -1,18 +1,25 @@
 import React from 'react';
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, TouchableOpacity } from 'react-native';
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
 
+import {Actions} from 'react-native-router-flux';
+
 export default class Login extends React.Component<{}> {
-	render() {
+	
+  signup() {
+      Actions.signup()
+  }
+
+  render() {
 		return(
 			<View style={styles.container}>
 				<Logo/>
-				<Form type = "Login" />
+				<Form type ="Login" />
 				<View style={styles.signupTextCont}>
 					<Text style={styles.signupText}>Don't have an account?</Text>
-					<Text style={styles.signupButton}> Sign up.</Text>
+					<TouchableOpacity onPress={this.signup}><Text style={styles.signupButton}> Sign up.</Text></TouchableOpacity>
 				</View>
 			</View>
 			)
