@@ -1,0 +1,14 @@
+Danny Male ConvergentRun 10 Quiet
+Danielle Female Capital10k 9 Casual
+Daphne Female Capital10k 9 Quiet
+Cheese Female ConvergentRun 15 Talkative
+Pepperoni Male LonghornRun 8 Casual
+Pepperjack Female LonghornRun 8 Casual
+McDonalds Male Capital10k 20 Talkative
+Hunger Male LonghornRun 5 Casual
+Pooh Male Capital10k 9 Talkative
+Rogers Male ConvergentRun 10 Talkative
+Tyler Male LonghornRun 10 Quiet
+Kyle Male LonghornRun 10 Quiet
+Famished Male Capital10k 21 Talkative
+Bernado Male ConvergentRun 10 Quiet
