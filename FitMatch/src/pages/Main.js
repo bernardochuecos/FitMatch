@@ -96,15 +96,17 @@ const styles = StyleSheet.create({
 		 width: 280, 
 		 height: 280
 	},
-	text: { fontSize: 18, 
+	text: { 
+		fontSize: 18, 
 		color: 'black',
 		marginTop: 40, 
 		marginBottom: 15
 	},
-	button: {backgroundColor: '#DDDDDD', 
-	padding: 10,
-	marginTop: 50,
-	marginLeft: 20,
-	marginRight: 20
+	button: {
+		backgroundColor: '#DDDDDD', 
+		padding: 10,
+		marginTop: 50,
+		marginLeft: 20,
+		marginRight: 20
 	}
 })
