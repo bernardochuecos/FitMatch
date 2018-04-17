@@ -4,6 +4,7 @@ import {
 	StyleSheet,
 	Text,
 	View,
+<<<<<<< HEAD
 	FlatList,
 	Image,
 	ActivityIndicator,
@@ -62,6 +63,12 @@ export default class Main extends Component {
 		})
 	}
 
+=======
+	FlatList
+} from 'react-native';
+
+export default class Main extends Component {
+>>>>>>> parent of 6765bec... BookFlatList
 	render() {
 		return (
 			this.state.isLoading
@@ -72,10 +79,8 @@ export default class Main extends Component {
 			:
 			<View style={styles.container}>
 				<FlatList
- 					data={this.state.dataSource}
-  					renderItem={this.renderItem}
-  					keyExtractor={(item, index) => index}
-  					ItemSeparatorComponent={this.renderSeparator}
+ 					data={[{key: 'a'}, {key: 'b'}]}
+  					renderItem={({item}) => <Text>{item.key}</Text>}
 				/>
 			</View>
 		);
@@ -85,6 +90,8 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor:'#A1D3F8',
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor:'#A1D3F8'
 	}
-});
+})
