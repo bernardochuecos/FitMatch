@@ -19,7 +19,7 @@ export default class Main extends Component {
 
 	renderItem = ({ item }) => {
 		return (
-			<View style={{ flexDirection: 'column',  marginTop: 100, marginBottom: 100}}>
+			<View style={styles.component}>
 				<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 					<Image style={styles.image}
 						source={{ uri: item.image }} />
@@ -38,7 +38,7 @@ export default class Main extends Component {
          				<Text> Yes </Text>
        				</TouchableOpacity>
        				<TouchableOpacity
-         				style={styles.button}>
+         				style={styles.buttonMiddle}>
          				<Text> Maybe </Text>
        				</TouchableOpacity>
        				<TouchableOpacity
@@ -92,9 +92,16 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor:'#A1D3F8'
 	},
+	component: { 
+		flexDirection: 'column',
+		marginTop: 30, 
+		marginBottom: 30, 
+		backgroundColor:'#b9def9'
+	},
 	image: {
-		 width: 280, 
-		 height: 280
+		marginTop: 30,
+		width: 280, 
+		height: 280
 	},
 	text: { 
 		fontSize: 18, 
@@ -106,6 +113,14 @@ const styles = StyleSheet.create({
 		backgroundColor: '#DDDDDD', 
 		padding: 10,
 		marginTop: 50,
+		marginLeft: 20,
+		marginRight: 20
+	},
+	buttonMiddle: {
+		backgroundColor: '#DDDDDD', 
+		padding: 10,
+		marginTop: 90,
+		marginBottom: 25,
 		marginLeft: 20,
 		marginRight: 20
 	}
