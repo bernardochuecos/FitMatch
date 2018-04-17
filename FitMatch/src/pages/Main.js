@@ -4,27 +4,21 @@ import {
 	StyleSheet,
 	Text,
 	View,
-<<<<<<< HEAD
 	FlatList,
-	Image,
-	ActivityIndicator,
-	TouchableOpacity,
-	ToastAndroid
+	Image
 } from 'react-native';
 
 export default class Main extends Component {
 	constructor() {
 		super()
 		this.state = {
-			dataSource: [],
-			isLoading: true
+			dataSource: []
 		}
 	}
 
 	renderItem = ({ item }) => {
 		return (
-			<TouchableOpacity style={{ flex: 1, flexDirection: 'row', marginBottom: 3}}
-				onPress={() => ToastAndroid.show(item.book_title, ToastAndroid.SHORT)}>
+			<View style={{ flex: 1, flexDirection: 'row', marginBottom: 3}}>
 				<Image style={{ width: 80, height: 80, margin: 5 }}
 					source={{ uri: item.image }} />
 				<View style={{ flex: 1, justifyContent: 'center', marginLeft: 5 }}>
@@ -35,7 +29,7 @@ export default class Main extends Component {
 						{item.author}
 					</Text>
 				</View>
-			</TouchableOpacity>
+			</View>
 		)
 	}
 
@@ -44,7 +38,7 @@ export default class Main extends Component {
 			<View
 				style={{ height: 1, width: '100%', backgroundColor: 'black'}}>
 			</View>
-		)
+			)
 	}
 
 	componentDidMount() {
@@ -54,8 +48,7 @@ export default class Main extends Component {
 		.then((response) => response.json())
 		.then((responseJson) => {
 			this.setState({
-				dataSource: responseJson.book_array,
-				isLoading: false
+				dataSource: responseJson.book_array
 			})
 		})
 		.catch((error) => {
@@ -63,24 +56,14 @@ export default class Main extends Component {
 		})
 	}
 
-=======
-	FlatList
-} from 'react-native';
-
-export default class Main extends Component {
->>>>>>> parent of 6765bec... BookFlatList
 	render() {
 		return (
-			this.state.isLoading
-			?
-			<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-				<ActivityIndicator size="Large" color="#4259f4" animating />
-			</View>
-			:
 			<View style={styles.container}>
 				<FlatList
- 					data={[{key: 'a'}, {key: 'b'}]}
-  					renderItem={({item}) => <Text>{item.key}</Text>}
+ 					data={this.state.dataSource}
+  					renderItem={this.renderItem}
+  					keyExtractor={(item, index) => index}
+  					ItemSeparatorComponent={this.renderSeparator}
 				/>
 			</View>
 		);
@@ -90,8 +73,6 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
 		backgroundColor:'#A1D3F8'
 	}
 })
