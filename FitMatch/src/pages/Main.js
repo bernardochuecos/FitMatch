@@ -22,14 +22,17 @@ export default class Main extends Component {
 			<View style={styles.component}>
 				<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 					<Image style={styles.image}
-						source={{ uri: item.image }} />
+						source={{ uri: item.picture}} />
 				</View>
 				<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 					<Text style={styles.text}>
-						{item.book_title}
+						{item.name.first}
 					</Text>
-					<Text style={{ fontSize: 16, color: 'black'}}>
-						{item.author}
+					<Text style={{ fontSize: 22, color: 'black'}}>
+						{item.gender}
+					</Text>
+					<Text style={{ fontSize: 22, color: 'black'}}>
+						{item.percent} match
 					</Text>
 				</View>
 				<View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -59,13 +62,13 @@ export default class Main extends Component {
 	}
 
 	componentDidMount() {
-		const url = 'http://www.json-generator.com/api/json/get/ccLAsEcOSq?indent=1'
+		const url = 'http://next.json-generator.com/api/json/get/4ymP-u1nV'
 
 		fetch(url)
 		.then((response) => response.json())
 		.then((responseJson) => {
 			this.setState({
-				dataSource: responseJson.book_array
+				dataSource: responseJson.users_array
 			})
 		})
 		.catch((error) => {
@@ -90,7 +93,7 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor:'#A1D3F8'
+		backgroundColor:'#a1d3f7'
 	},
 	component: { 
 		flexDirection: 'column',
@@ -104,7 +107,7 @@ const styles = StyleSheet.create({
 		height: 280
 	},
 	text: { 
-		fontSize: 18, 
+		fontSize: 28, 
 		color: 'black',
 		marginTop: 40, 
 		marginBottom: 15
@@ -112,14 +115,14 @@ const styles = StyleSheet.create({
 	button: {
 		backgroundColor: '#DDDDDD', 
 		padding: 10,
-		marginTop: 50,
+		marginTop: 1,
 		marginLeft: 20,
 		marginRight: 20
 	},
 	buttonMiddle: {
 		backgroundColor: '#DDDDDD', 
 		padding: 10,
-		marginTop: 90,
+		marginTop: 50,
 		marginBottom: 25,
 		marginLeft: 20,
 		marginRight: 20
