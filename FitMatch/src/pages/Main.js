@@ -26,7 +26,7 @@ export default class Main extends Component {
 				</View>
 				<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 					<Text style={styles.text}>
-						{item.name.first}
+						{item.name.first}, {item.age}
 					</Text>
 					<Text style={{ fontSize: 22, color: 'black'}}>
 						{item.gender}
@@ -35,7 +35,7 @@ export default class Main extends Component {
 						{item.percent} match
 					</Text>
 				</View>
-				<View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+				<View style={styles.buttonContainer}>
        				<TouchableOpacity
          				style={styles.button}>
          				<Text> Yes </Text>
@@ -111,6 +111,12 @@ const styles = StyleSheet.create({
 		color: 'black',
 		marginTop: 40, 
 		marginBottom: 15
+	},
+	buttonContainer: {
+		flex: 1, 
+		flexDirection: 'row', 
+		justifyContent: 'center', 
+		alignItems: 'center'
 	},
 	button: {
 		backgroundColor: '#DDDDDD', 
