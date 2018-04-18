@@ -38,15 +38,18 @@ export default class Main extends Component {
 				<View style={styles.buttonContainer}>
        				<TouchableOpacity
          				style={styles.button}>
-         				<Text> Yes </Text>
+         				<Image style={{width: 100, height: 100}}
+						source={require('../images/yesButton.png')} />
        				</TouchableOpacity>
        				<TouchableOpacity
          				style={styles.buttonMiddle}>
-         				<Text> Maybe </Text>
+         				<Image style={{width: 100, height: 100}}
+						source={require('../images/maybeButton.png')} />
        				</TouchableOpacity>
        				<TouchableOpacity
          				style={styles.button}>
-         				<Text> No </Text>
+         				<Image style={{width: 100, height: 100}}
+						source={require('../images/noButton.png')} />
        				</TouchableOpacity>
       			</View>
 			</View>
@@ -119,18 +122,16 @@ const styles = StyleSheet.create({
 		alignItems: 'center'
 	},
 	button: {
-		backgroundColor: '#DDDDDD', 
+		backgroundColor: 'rgba(52, 52, 52, 0.0)', 
 		padding: 10,
-		marginTop: 1,
-		marginLeft: 20,
-		marginRight: 20
+		marginLeft: 5,
+		marginRight: 5
 	},
 	buttonMiddle: {
-		backgroundColor: '#DDDDDD', 
+		backgroundColor: 'rgba(52, 52, 52, 0.0)', 
 		padding: 10,
-		marginTop: 50,
-		marginBottom: 25,
-		marginLeft: 20,
-		marginRight: 20
+		marginTop: 10,
+		marginLeft: 5,
+		marginRight: 5
 	}
 })
