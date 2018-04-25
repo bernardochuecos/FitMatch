@@ -25,7 +25,8 @@ export default class Main extends Component {
 				<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 					<Text style={styles.text}>
 						{item[4]}, {item[1]}
-					</Text>
+					</Text
+					>
 					<Text style={{ fontSize: 22, color: 'black'}}>
 						{item[2]}
 					</Text>

@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
 import Main from './src/pages/Main';
+import Preferences from './src/pages/Preferences';
 
 export default class App extends React.Component {
   render() {
@@ -13,7 +14,7 @@ export default class App extends React.Component {
           backgroundColor="#64dd17"
           barStyle="light-content"
         />
-        <Main/>
+        <Preferences/>
       </View>
     );
   }

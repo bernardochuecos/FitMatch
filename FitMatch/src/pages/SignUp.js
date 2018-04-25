@@ -19,7 +19,7 @@ export default class SignUp extends React.Component<{}> {
 				<SignupForm type = "Signup"/>
 				<View style={styles.signupTextCont}>
 					<Text style={styles.signupText}>Already have an account?</Text>
-					<TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> Sign in</Text></TouchableOpacity>
+					<TouchableOpacity><Text style={styles.signupButton}> Sign in</Text></TouchableOpacity>
 				</View>
 			</View>
 			)
