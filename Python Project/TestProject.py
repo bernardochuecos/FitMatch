@@ -1,3 +1,25 @@
+def Calc(Person[]):
+        file = open("NumOfPeople.txt", "r")
+        Num = file.readline()
+        #Name
+        #Exp level (Beginner, Intermediate, Expert)
+        #Pace?
+        #Gender Pref
+        #Event
+        #lvl of Convo( Quiet, Casual, Talkative
+        result = [[0 for x in range(Num)] for y in range(4)]
+        for num in range(0, Num):
+                file2 = open("file{}.txt".format(num), 'r')
+                persA = []
+                for x in range(7):
+                        persA.append(file2.readline())
+                result[num][0] = persA[0] #Name
+                result[num][1] = persA[1] #Age
+                result[num][2] = persA[4] #Gender
+                #calculation part for result[num][3]
+                if(
+        
+
 def WeightCalculation():
         print("please feed me")
         
@@ -82,6 +104,5 @@ def main():
                         exist_name = input("What is your name? ")
                         exist_name  = exist_name.capitalize()
                         Match(exist_name)
-main()
 		
 	

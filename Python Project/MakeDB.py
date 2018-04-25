@@ -1,0 +1,32 @@
+def main():
+    for x in range(0,10):
+        file = open("file{}.txt".format(x), 'w')
+        text = ["Albert\n", "20\n", "Beginner\n", "10:00\n", "Male\n", "Longhorn Run\n", "Quiet\n"]
+        file.writelines(text)
+        file.close()
+        
+def edit():
+    x = input("file number: ")
+    file = open("file{}.txt".format(x), 'w')
+    name = input("name: ")
+    age = input("age: ")
+    exp = input("Exp: ")
+    pace = input("pace: ")
+    gend = input("gend: ")
+    event = input("event: ")
+    talk = input("conv: ")
+    file.write(name)
+    file.write("\n")
+    file.write(age)
+    file.write("\n")
+    file.write(exp)
+    file.write("\n")
+    file.write(pace)
+    file.write("\n")
+    file.write(gend)
+    file.write("\n")
+    file.write(event)
+    file.write("\n")
+    file.write(talk)
+    file.close()
+edit()
