@@ -68,15 +68,15 @@ export default class Main extends Component {
 			<View style={styles.container}>
 				<SectionList
  					sections={ [ {title: 'FitMatch', data: [[0,37,"male","http://randomuser.me/api/portraits/men/71.jpg","Angelique","Harmon","Eu irure pariatur aute pariatur cillum deserunt veniam.","97%"],
-			[1,32,"female","http://randomuser.me/api/portraits/women/2.jpg","Ally","Phillips","Nisi sunt Lorem ex aliqua Lorem minim ut anim cupidatat id aliqua veniam.","94%"],
-			[2,20,"male","http://randomuser.me/api/portraits/men/7.jpg","Apollo","Jarvis","Duis sunt elit magna ipsum veniam culpa occaecat magna.","91%"],
-			[3,31,"male","http://randomuser.me/api/portraits/men/15.jpg","Jones","Slater","Voluptate aliqua magna anim velit officia fugiat pariatur sunt mollit adipisicing aliqua nostrud sint cillum.","88%"],
-			[4,40,"male","http://randomuser.me/api/portraits/men/92.jpg","Dionne","Castillo","Adipisicing qui consequat cupidatat reprehenderit aliquip laboris.","85%"],
-			[5,33,"male","http://randomuser.me/api/portraits/men/11.jpg","Smith","Benjamin","Amet aliqua pariatur consequat nulla quis eu sint magna et ullamco duis exercitation.","82%"],
-			[6,19,"male","http://randomuser.me/api/portraits/men/41.jpg","Daniel","Waller","Lorem exercitation incididunt aliquip ex ad voluptate ut consequat tempor nostrud.","79%"],
-			[7,37,"male","http://randomuser.me/api/portraits/men/66.jpg","Rivers","Meadows","Sunt excepteur duis enim exercitation amet sit.","76%"],
-			[8,34,"male","http://randomuser.me/api/portraits/men/70.jpg","Myrna","Cotton","Non incididunt voluptate sint laboris qui non officia sunt anim dolore minim.","73%"],
-			[9,29,"female","http://randomuser.me/api/portraits/women/3.jpg","Alta","Peterson","Irure aliquip fugiat irure eu cupidatat pariatur cillum eu occaecat nisi duis culpa.","70%"]]} ] }
+															[1,32,"female","http://randomuser.me/api/portraits/women/2.jpg","Ally","Phillips","Nisi sunt Lorem ex aliqua Lorem minim ut anim cupidatat id aliqua veniam.","94%"],
+															[2,20,"male","http://randomuser.me/api/portraits/men/7.jpg","Apollo","Jarvis","Duis sunt elit magna ipsum veniam culpa occaecat magna.","91%"],
+															[3,31,"male","http://randomuser.me/api/portraits/men/15.jpg","Jones","Slater","Voluptate aliqua magna anim velit officia fugiat pariatur sunt mollit adipisicing aliqua nostrud sint cillum.","88%"],
+															[4,40,"male","http://randomuser.me/api/portraits/men/92.jpg","Dionne","Castillo","Adipisicing qui consequat cupidatat reprehenderit aliquip laboris.","85%"],
+															[5,33,"male","http://randomuser.me/api/portraits/men/11.jpg","Smith","Benjamin","Amet aliqua pariatur consequat nulla quis eu sint magna et ullamco duis exercitation.","82%"],
+															[6,19,"male","http://randomuser.me/api/portraits/men/41.jpg","Daniel","Waller","Lorem exercitation incididunt aliquip ex ad voluptate ut consequat tempor nostrud.","79%"],
+															[7,37,"male","http://randomuser.me/api/portraits/men/66.jpg","Rivers","Meadows","Sunt excepteur duis enim exercitation amet sit.","76%"],
+															[8,34,"male","http://randomuser.me/api/portraits/men/70.jpg","Myrna","Cotton","Non incididunt voluptate sint laboris qui non officia sunt anim dolore minim.","73%"],
+															[9,29,"female","http://randomuser.me/api/portraits/women/3.jpg","Alta","Peterson","Irure aliquip fugiat irure eu cupidatat pariatur cillum eu occaecat nisi duis culpa.","70%"]]} ] }
  					//{this.state.dataSource}
   					renderItem={this.renderItem}
   					renderSectionHeader={
@@ -96,6 +96,7 @@ export default class Main extends Component {
   					keyExtractor={(item, index) => index}
   					ItemSeparatorComponent={this.renderSeparator}
   					stickySectionHeadersEnabled={true}
+  					
 				/>
 			</View>
 		);

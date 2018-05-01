@@ -4,8 +4,6 @@ import { StyleSheet, Text, View, StatusBar, TouchableOpacity, SectionList, Picke
 import SignupLogo from '../components/SignupLogo';
 import SignupForm from '../components/SignupForm';
 
-import {Actions} from 'react-native-router-flux';
-
 export default class Preferences extends React.Component<{}> {
   constructor(){
     super();
